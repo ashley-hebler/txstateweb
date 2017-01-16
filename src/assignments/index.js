@@ -5,7 +5,7 @@ var rubricPath = '/static/rubrics/rubric-';
 var rubricExt = '.xlsx';
 function genRubric(num) {
   return rubricPath+num+rubricExt;
-};
+}
 export default {
 
 	assignments:[
@@ -167,7 +167,7 @@ export default {
 	      rubric: genRubric('3'),
 	      skills: [ 'use all or any of the html/css', 'design', 'multimedia', 'framework skills that best fit nature of reporting project','Content Management Systems'],
 	      requirements: [
-	      	'<span class="highlight highlight--alert">A draft of the interface (the basic WordPress site design) of the final project will be due two weeks before the end of the semester.</span>',
+	      	'<span class="highlight highlight--alt"> <svg class="icon"><use xlink:href="#alert"></use></svg>A draft of the interface (the basic WordPress site design) of the final project will be due <strong>two weeks</strong> before the end of the semester.</span>',
 	      	'Select a topic that lends toward an extensive use of your skills. This should be a journalistic reporting project. Arrange appropriate interviews, photos, or recording as necessary. Contact appropriate sources.',
 	      	'Create a complete Web site using WordPress as CMS. Find a good Bootstrap-driven theme to start and then customize.',
 	      	'Install the site under a subdomain. See instructions in handout.',
@@ -211,4 +211,52 @@ export default {
 	    },
 	],
 }
+
+
+// SVG include
+  ;(function(window, document) {
+      'use strict';
+
+      var file = '/static/svg.svg',
+          revision = 1;
+
+      if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+          return true;
+
+      var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+          request,
+          data,
+          insertIT = function() {
+              document.body.insertAdjacentHTML('afterbegin', data);
+          },
+          insert = function() {
+              if (document.body) insertIT();
+              else document.addEventListener('DOMContentLoaded', insertIT);
+          };
+
+      if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+          // data = localStorage.getItem('inlineSVGdata');
+          if (data) {
+              insert();
+              return true;
+          }
+      }
+
+      try {
+          request = new XMLHttpRequest();
+          request.open('GET', file, true);
+          request.onload = function() {
+              if (request.status >= 200 && request.status < 400) {
+                  data = request.responseText;
+                  insert();
+                  if (isLocalStorage) {
+                      localStorage.setItem('inlineSVGdata', data);
+                      localStorage.setItem('inlineSVGrev', revision);
+                  }
+              }
+          }
+          request.send();
+      } catch (e) {}
+  }(window, document));
+
 

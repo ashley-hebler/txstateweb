@@ -5,6 +5,7 @@ var utils = require('./utils')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrors = require('friendly-errors-webpack-plugin')
+var SvgStore = require('webpack-svgstore-plugin')
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -31,6 +32,15 @@ module.exports = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true
     }),
-    new FriendlyErrors()
+    new FriendlyErrors(),
+    new SvgStore({
+          // svgo options
+          svgoOptions: {
+            plugins: [
+              { removeTitle: true }
+            ]
+          },
+          prefix: 'icon'
+        })
   ]
 })

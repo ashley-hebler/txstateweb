@@ -13,6 +13,14 @@
 		display: inline-block;
 		padding: .3em;
 		border-radius: 8px;
+		.icon {
+			width: 1em;
+			height: 1em;
+			display: inline-block;
+			vertical-align: middle;
+			fill: $brand-inverse;
+			margin: 0 .5em;
+		}
 		&--alert {
 			background-color: $accent;
 		}
@@ -101,6 +109,7 @@
 					color: $accent;
 				}
 			}
+			.navbar-brand {font-weight: bold;}
 		}
 		&__menu {
 			background-color: $brand-dark;
