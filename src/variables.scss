@@ -1,0 +1,119 @@
+$brand: #3185FC;
+$brand-inverse: #fff;
+$accent: #FFA400;
+$brand-dark: #2A2A72;
+$brand-black: #232528;
+$brand-gray-light: #EAF6FF;
+
+$font-family-base: 'Source Sans Pro', sans-serif;
+$font-family-accent: 'Montserrat', sans-serif;
+
+
+// Measures
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+// Extra small screen / phone
+$screen-xxs:                 375px !default;
+$screen-xxs-min:             $screen-xxs !default;
+$screen-sm-phone:            $screen-xxs-min !default;
+
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+// So media queries dont overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;// Screens
+
+// Container - class using these found in grid.scss
+// ** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:             30px !default;
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+// ** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+// ** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+// ** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+@mixin respond-to($viewport-size) {
+  @if $viewport-size == xs {
+    @media only screen and (max-width: $screen-xs-max) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == xxs-and-up) {
+    @media only screen and (min-width: $screen-xxs-min) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == xs-and-up) {
+    @media only screen and (min-width: $screen-xs-min) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == xs-and-down) {
+    @media only screen and (max-width: $screen-xs-max) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == sm) {
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == sm-and-up) {
+    @media only screen and (min-width: $screen-sm-min) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == sm-and-down) {
+    @media only screen and (max-width: $screen-sm-max) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == md) {
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == md-and-up) {
+    @media only screen and (min-width: $screen-md-min) {
+      @content;
+    }
+  }
+  @else if ($viewport-size == lg) {
+    @media only screen and (min-width: $screen-lg-min) {
+      @content;
+    }
+  }
+}
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin lsp($val) {
+  letter-spacing: #{$val/1000}em;
+}
