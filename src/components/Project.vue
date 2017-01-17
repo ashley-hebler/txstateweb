@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import assignmentList from '../../assignments'
+import assignmentList from '../content'
 export default {
   name: 'project',
   data () {

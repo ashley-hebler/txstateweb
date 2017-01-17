@@ -2,7 +2,8 @@
   <div class="home">
     <h1 class="page-title">
       <div class="container">
-        <span>Welcome to Online Media Design</span>
+        <span>Welcome to Web Design and Publishing</span>
+        <span class="page-title__sub">Spring 2017</span>
       </div>
     </h1>
     <div class="container content">
@@ -10,38 +11,25 @@
       <p>In addition, the class will address social and theoretical implications of technology, such as the digital divide, social media and data journalism.</p>
       <p>The course time on most weeks includes lecture and discussion on the first half of class and lab time during the second half. Students will be expected to attend open lab hours to complete projects.</p>
       <p>I look forward to a <span class="highlight">fun</span> and <span class="highlight highlight--alt">creative</span> semester.</p>
+      <h3>Quick Links</h3>
+      <ul class="project__list project__list--numbered">
+        <li v-for="(item, index) in projects" v-if="item.linked">
+          <a v-bind:href="item.url" class="btn btn-primary">{{item.name}}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+import projectList from '../content'
 export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Homepage'
+      msg: 'Homepage',
+      projects: projectList.assignments
     }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>

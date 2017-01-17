@@ -3,9 +3,11 @@
 	html {
 		font-size: 1rem;
 		font-family: $font-family-base;
+		background-color: $brand-dark;
 	}
 	.main {
 		padding-top: 3em;
+		background-color: #fff;
 	}
 	.highlight {
 		background-color: $brand;
@@ -129,6 +131,15 @@
 			}
 		}
 	}
+// Footer
+	.footer {
+		color: $brand-inverse;
+		padding: 1em 0;
+		font-size: .8em;
+		a {
+			color: $brand-inverse;
+		}
+	}
 // Content
 	.content {
 		padding-top: 2em;
@@ -163,6 +174,44 @@
 			}
 		}
 
+	}
+// Navbar Toggle
+	.navbar-default .navbar-toggle,
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+		background: none;
+		border: none;
+		padding: 0;
+		width: 2em;
+		height: 2em;
+		position: relative;
+	}
+	.navbar-toggle {
+		.icon {
+			transition: all .3s;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			position: absolute;
+			fill: $accent;
+			&-close {
+				opacity: 0;
+				visibility: 0;
+			}
+		}
+	}
+	.menuOpen {
+		.navbar-toggle {
+			.icon {
+				opacity: 0;
+				visibility: hidden;
+				&-close {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
 	}
 // Page Title
 	.page-title {
@@ -199,6 +248,12 @@
 		}
 		.assignments & {
 			background-image: url('./assets/work.jpg');
+		}
+		.tutorial & {
+			background-image: url('./assets/study.jpg');
+		}
+		.students & {
+			background-image: url('./assets/office.jpg');
 		}
 	}
 // Timeline
@@ -385,6 +440,8 @@
 			display: block;
 		}
 		&__list {
+			list-style: none;
+			padding: 0;
 			&--numbered {
 				padding: 0;
 				li {
@@ -424,5 +481,22 @@
 				position: absolute;
 				border-radius: 0 0 0 8px;
 			}
+		}
+	}
+// Tutorial
+	.tutorial {
+		&__list {
+			list-style: none;
+			padding: 0;
+		}
+		&__item {
+			margin-bottom: 2em;
+			padding: 0;
+		}
+		&__title {
+			background-color: $brand;
+			color: $brand-inverse;
+			margin: 0;
+			padding: 1em;
 		}
 	}

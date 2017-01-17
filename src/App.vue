@@ -4,11 +4,10 @@
       <nav class="site-wrap__navbar navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <button id="menuToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" v-bind:class="{ menuOpen: menuActive }" v-on:click="toggleClass">
+              <button id="menuToggle" type="button" class="navbar-toggle" v-bind:class="{ menuOpen: menuActive }" v-on:click="toggleClass">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <svg class="icon"><use xlink:href="#menu"></use></svg>
+                <svg class="icon icon-close"><use xlink:href="#close"></use></svg>
               </button>
               <a class="navbar-brand" href="/">Web Design and Publishing</a>
             </div>
@@ -24,6 +23,13 @@
       <main class="main">
         <router-view></router-view>
       </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__copy">
+            © <span id="year"></span> Web Design and Publishing | Photos from <a href="https://unsplash.com/" target="_blank">unsplash.com</a>
+          </div>
+        </div>
+      </footer>
       <section class="site-wrap__menu">
         <div class="push-menu">
           <ul class="nav navbar-nav">
@@ -67,8 +73,9 @@ export default {
       ]
     }
   },
-  created() {
+  mounted() {
     // this.dynamicTitle();
+    document.getElementById("year").innerHTML = new Date().getFullYear();
   },
   methods: {
     toggleClass: function() {
