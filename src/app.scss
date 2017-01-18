@@ -36,6 +36,12 @@
 			text-align: center;
 			margin-right: .4em;
 		}
+		&--mute {
+			border: 2px solid $brand-gray-light;
+			background-color: transparent;
+			color: $brand-black;
+			margin-right: 1em;
+		}
 	}
 	.tag {
 	  background: $brand;
@@ -256,6 +262,13 @@
 			background-image: url('./assets/office.jpg');
 		}
 	}
+// Page Heading
+	.page-heading {
+		font-family: $font-family-accent;
+		font-size: .8em;
+		@include lsp(50);
+		margin-top: 3em;
+	}
 // Timeline
 	.timeline {
 		position: relative;
@@ -355,9 +368,10 @@
 			flex-wrap: wrap;
 			&__block {
 				padding: 0 .5em;
-				width: 25%;
+				width: 30%;
 				&--main {
-					width: 75%;
+					width: 70%;
+					padding-left: 2em;
 				}
 				&--full {
 					width: 100%;
@@ -370,7 +384,7 @@
 			&__item {
 				padding: 0;
 				display: block;
-				margin-bottom: .5em;
+				margin-bottom: 1.5em;
 			}
 			&__student {
 				position: relative;
@@ -388,6 +402,21 @@
 		margin-top: 2em;
 		&__block {
 			box-shadow: 0 0 3px rgba($brand-black, .3);
+		}
+	}
+// Text Grid
+	.text-grid {
+		&__block {
+			margin-bottom: .5em;
+		}
+		&__item:first-child {
+			font-weight: bold;
+		}
+		@include respond-to(md-and-up) {
+			display: flex;
+			&__block {
+				padding-right: 2em;
+			}
 		}
 	}
 // Project

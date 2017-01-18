@@ -69,6 +69,10 @@ export default {
         {
           name: 'Tutorials',
           path: '/tutorials'
+        },
+        {
+          name: 'Syllabus',
+          path: '/syllabus'
         }
       ]
     }

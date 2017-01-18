@@ -20,7 +20,13 @@
               <span class="day__date">{{day.date | prettyDate }}</span>
               <span class="day__student tag">{{day.student}}</span>
               <div class="day__item" v-for="(item, index) in day.topics">
-                <span class="highlight highlight--num">{{index + 1}}</span>{{item}}
+                <span class="highlight highlight--mute">{{item}}</span>
+              </div>
+              <div class="day__item" v-if="day.due">
+                <div class="day__due">
+                  <h3 class="day__alert highlight highlight--alert">Due Today</h3>
+                  <span class="day__item" v-for="item in day.due" v-html="item">{{item}}</span>
+                </div>
               </div>
             </div>
             <div class="day__block day__block--main" v-for="item in day.readings">
@@ -34,7 +40,7 @@
               </div>
               <div class="day__item" v-if="item.assignmentsIn">
                 <span class="day__label day__label--alt">
-                  In class assignment:
+                  In class assignment
                 </span>
                 <ul class="day__list" v-for="subitem in item.assignmentsIn">
                   <li><span v-html="subitem">{{ subitem }}</span></li>
@@ -42,17 +48,11 @@
               </div>
               <div class="day__item" v-if="item.assignmentsOut">
                 <span class="day__label day__label--alert">
-                  To be completed before next class:
+                  Out of class assignment
                 </span>
                 <ul class="day__list" v-for="subitem in item.assignmentsOut">
                   <li><span v-html="subitem">{{ subitem }}</span></li>
                 </ul>
-              </div>
-            </div>
-            <div class="day__block day__block--full" v-if="day.due">
-              <div class="day__due">
-                <h3 class="day__alert highlight highlight--alert">Due Today</h3>
-                <span class="day__item" v-for="item in day.due">{{item}}</span>
               </div>
             </div>
           </div>

@@ -211,154 +211,609 @@ export default {
 	    },
 	],
 	outline:[
-	  // Day 1
-	    {
-	      next: true,
-	      date: '2017-01-19',
-	      dateLabel: 'day-1',
-	      dateNav: '#day-1',
-	      student: 'Ashley',
-	      topics: [
-	        'Review Syllabus, Schedule, Introductions',
-	        'History of Internet & Web',
-	        'Searching the Web, How Web Works'
-	      ],
-	      readings: [
-	        {
-	          title: 'Links for today’s discussion',
-	          links: [
-	            {
-	            url: 'http://visual.ly/evolution-web?view=true',
-	            name: 'The Evolution of the Web'
-	            },
-	            {
-	            url: 'http://www.matisse.net/files/glossary.html',
-	            name: 'Glossary of Internet Terms'
-	            },
-	            {
-	            url: 'http://mashable.com/2012/08/22/the-internet-a-decade-later/',
-	            name: 'The Internet: A Decade Later'
-	            },
-	            {
-	            url: 'http://www.forbes.com/sites/jaysondemers/2016/04/18/7-predictions-for-how-the-internet-will-change-over-the-next-15-years/#5581e2a478dc',
-	            name: '7 Predictions for How the Internet Will Change Over the Next 15 Years - Forbes 2016'
-	            },
-	            {
-	            url: 'http://www.kpcb.com/internet-trends',
-	            name: 'KPCB Internet Trends - 2016'
-	            },
-	            {
-	            url: 'https://vimeo.com/113124865',
-	            name: 'History of the Internet'
-	            },
-	            {
-	            url: 'https://infopeople.org/content/best-search-tools-chart',
-	            name: 'InfoPeople Search Tools Chart'
-	            },
-	            {
-	            url: 'http://www.learnthenet.com/animated-internet/how-search-engines-work/',
-	            name: 'How Search Engines Work'
-	            },
-	            {
-	            url: 'http://www.learnthenet.com/animated-internet/how-the-web-works/index.php',
-	            name: 'How The Web Works'
-	            },
-	            {
-	              url: 'https://slides.com/ashleyrosehebler/using-the-web/',
-	              'name': 'Slide deck for today'
-	            }
-	          ],
-	          assignmentsOut: [
-	            '<strong>WATCH:</strong> <a href="https://www.youtube.com/watch?v=SDucuVi5FrI" target="_blank">The Internet: Behind the Web.</a>',
-	            '<strong>CREATE</strong> a post on our Slack discussion: <em>What was most interesting, what didn’t you know before watching?</em>',
-	            '<strong>WATCH:</strong> All the <a href="http://codeactually.com/html.html" target="_blank">HTML Tutorials on CodeActually.com.</a> We’ll review in class.'
-	          ]
-	        }
-	      ],
-	      due: '',
-	    },
-	  // Day 2
-	    {
-	      next: false,
-	      date: '2017-01-26',
-	      dateLabel: 'day-2',
-	      dateNav: '#day-2',
-	      student: 'TBA',
-	      topics: [
-	        'Basic Web Design',
-	      ],
-	      readings: [
-	        {
-	          title: 'Handouts and links for today',
-	          links: [
-	            {
-	            url: 'http://cindyroyal.com/webdesign/handouts/basichtml.pdf',
-	            name: 'Intro. HTML handout'
-	            },
-	            {
-	            url: 'http://cindyroyal.com/webdesign/handouts/htmlll.pdf',
-	            name: 'Text Formatting, Images and Links'
-	            },
-	            {
-	            url: 'http://www.cindyroyal.com/webdesign/handouts/lists_tables.pdf',
-	            name: 'Lists and Tables handout'
-	            },
-	            {
-	            url: 'https://reclaimhosting.com/',
-	            name: 'Web Hosting – Reclaim Hosting.  We’ll discuss in class.'
-	            },
-	          ],
-	          assignmentsIn: [
-	            '<strong>WORK</strong> on personal site – Project 1',
-	            '<strong>READ:</strong> <a href="http://towknight.org/research/superpowers/" target="_blank">Superpowers The digital skills media leaders say newsrooms need going forward.</a>',
-	            '<strong>CREATE</strong> Slack post in <a target="_blank" href="https://webdesigntxst.slack.com/?redir=%2Fmessages%2Fsuperpowers%2F">#superpowers</a><br/>Discussion topics:<br/><em>What do you think are the most important skills for communicators? What do you think about the results of this report in regard to your own career?</em> '
-	          ]
-	        }
-	      ]
-	    },
-	  // Day 3
-	    {
-	      next: false,
-	      date: '2017-02-02',
-	      dateLabel: 'day-3',
-	      dateNav: '#day-3',
-	      student: 'TBA',
-	      topics: [
-	        'Basic Web Design',
-	      ],
-	      readings: [
-	        {
-	          title: 'Handouts and links for today',
-	          links: [
-	            {
-	            url: 'http://cindyroyal.com/webdesign/handouts/basichtml.pdf',
-	            name: 'Intro. HTML handout'
-	            },
-	            {
-	            url: 'http://cindyroyal.com/webdesign/handouts/htmlll.pdf',
-	            name: 'Text Formatting, Images and Links'
-	            },
-	            {
-	            url: 'http://www.cindyroyal.com/webdesign/handouts/lists_tables.pdf',
-	            name: 'Lists and Tables handout'
-	            },
-	            {
-	            url: 'https://reclaimhosting.com/',
-	            name: 'Web Hosting – Reclaim Hosting.  We’ll discuss in class.'
-	            },
-	          ],
-	          assignmentsIn: [
-	            '<strong>WORK</strong> on personal site – Project 1',
-	            '<strong>READ:</strong> <a href="http://towknight.org/research/superpowers/" target="_blank">Superpowers The digital skills media leaders say newsrooms need going forward.</a>',
-	            '<strong>CREATE</strong> Slack post in <a target="_blank" href="https://webdesigntxst.slack.com/?redir=%2Fmessages%2Fsuperpowers%2F">#superpowers</a><br/>Discussion topics:<br/><em>What do you think are the most important skills for communicators? What do you think about the results of this report in regard to your own career?</em> '
-	          ]
-	        }
-	      ],
-	      due: [
-	        'Test Due',
-	        'Test due 2'
-	      ],
-	    }
+		// Day 1 1-19
+		{
+		  next: true,
+		  date: '2017-01-19',
+		  dateLabel: 'day-1',
+		  dateNav: '#day-1',
+		  student: 'Ashley',
+		  topics: [
+		    'Review Syllabus, Schedule, Introductions',
+		    'History of Internet & Web',
+		    'Searching the Web, How Web Works'
+		  ],
+		  readings: [
+		    {
+		      title: 'Links for today’s discussion',
+		      links: [
+		        {
+		        url: 'http://visual.ly/evolution-web?view=true',
+		        name: 'The Evolution of the Web'
+		        },
+		        {
+		        url: 'http://www.matisse.net/files/glossary.html',
+		        name: 'Glossary of Internet Terms'
+		        },
+		        {
+		        url: 'http://mashable.com/2012/08/22/the-internet-a-decade-later/',
+		        name: 'The Internet: A Decade Later'
+		        },
+		        {
+		        url: 'http://www.forbes.com/sites/jaysondemers/2016/04/18/7-predictions-for-how-the-internet-will-change-over-the-next-15-years/#5581e2a478dc',
+		        name: '7 Predictions for How the Internet Will Change Over the Next 15 Years - Forbes 2016'
+		        },
+		        {
+		        url: 'http://www.kpcb.com/internet-trends',
+		        name: 'KPCB Internet Trends - 2016'
+		        },
+		        {
+		        url: 'https://vimeo.com/113124865',
+		        name: 'History of the Internet'
+		        },
+		        {
+		        url: 'https://infopeople.org/content/best-search-tools-chart',
+		        name: 'InfoPeople Search Tools Chart'
+		        },
+		        {
+		        url: 'http://www.learnthenet.com/animated-internet/how-search-engines-work/',
+		        name: 'How Search Engines Work'
+		        },
+		        {
+		        url: 'http://www.learnthenet.com/animated-internet/how-the-web-works/index.php',
+		        name: 'How The Web Works'
+		        },
+		        {
+		          url: 'https://slides.com/ashleyrosehebler/using-the-web/',
+		          'name': 'Slide deck for today'
+		        }
+		      ],
+		      assignmentsOut: [
+		        '<strong>WATCH:</strong> <a href="https://www.youtube.com/watch?v=SDucuVi5FrI" target="_blank">The Internet: Behind the Web.</a>',
+		        '<strong>CREATE</strong> a post on our Slack discussion: <em>What was most interesting, what didn’t you know before watching?</em>',
+		        '<strong>WATCH:</strong> All the <a href="http://codeactually.com/html.html" target="_blank">HTML Tutorials on CodeActually.com.</a> We’ll review in class.'
+		      ]
+		    }
+		  ],
+		  due: '',
+		},
+		// Day 2 1-26
+		{
+		  next: false,
+		  date: '2017-01-26',
+		  dateLabel: 'day-2',
+		  dateNav: '#day-2',
+		  student: 'TBA',
+		  topics: [
+		    'Basic Web Design',
+		  ],
+		  readings: [
+		    {
+		      title: 'Handouts and links for today',
+		      links: [
+					{
+					url: 'http://cindyroyal.com/webdesign/handouts/basichtml.pdf',
+					name: 'Intro. HTML handout'
+					},
+					{
+					url: 'http://cindyroyal.com/webdesign/handouts/htmlll.pdf',
+					name: 'Text Formatting, Images and Links'
+					},
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/lists_tables.pdf',
+					name: 'Lists and Tables handout'
+					},
+					{
+					url: 'https://reclaimhosting.com/',
+					name: 'Web Hosting – Reclaim Hosting.  We’ll discuss in class.'
+					},
+		      ],
+				assignmentsIn: [
+				'<strong>WORK</strong> on personal site – Project 1',
+				'<strong>READ:</strong> <a href="http://towknight.org/research/superpowers/" target="_blank">Superpowers The digital skills media leaders say newsrooms need going forward.</a>',
+				'<strong>CREATE</strong> Slack post in <a target="_blank" href="https://webdesigntxst.slack.com/?redir=%2Fmessages%2Fsuperpowers%2F">#superpowers</a><br/>Discussion topics:<br/><em>What do you think are the most important skills for communicators? What do you think about the results of this report in regard to your own career?</em> '
+				],
+				assignmentsOut: [
+					'<strong>WORK</strong> on personal site <strong>outside</strong> of class. <em>You will need to be ready to upload your site by the end of next class</em>'
+				]
+		    }
+		  ]
+		},
+		// Day 3 2-2
+		{
+			next: false,
+			date: '2017-02-02',
+			dateLabel: 'day-3',
+			dateNav: '#day-3',
+			student: 'TBA',
+			topics: [
+				'HTML continued',
+			],
+			readings: [
+			{
+		  	  	title: 'Publishing Your Site',
+		  	  	links: [
+		  			{
+		  			url: 'http://www.cindyroyal.com/webdesign/handouts/fetch.pdf',
+		  			name: 'Uploading Files handout'
+		  			},
+		  			{
+		  			url: 'http://webdesign.cindyroyal.net/setting-up-hosting-and-transferring-files/',
+		  			name: 'Setting Up Hosting and Transferring Files'
+		  			},
+		  	  	],
+				assignmentsIn: [
+					'<strong>SETUP</strong> your Reclaim Hosting account with domain',
+				],
+				assignmentsOut: [
+					'<strong>WATCH:</strong> <a href="/tutorials/css">CSS</a> and <a href="/tutorials/photoshop">Photoshop</a> tutorials',
+				]
+			}
+			],
+			due: [
+				'<a href="/assignments/project-1">Project 1 - Student Bio Website</a>'
+			],
+		},
+		// Day 4 2-9
+		{
+			next: false,
+			date: '2017-02-09',
+			dateLabel: 'day-4',
+			dateNav: '#day-4',
+			student: 'TBA',
+			topics: [
+				'Cascading Stylesheets (CSS) for formatting a website',
+			],
+			readings: [
+			{
+			  	title: 'Today you’ll spice up your sites with some CSS! Handouts and examples are below:',
+				links: [
+					{
+					url: 'http://www.cindyroyal.com/webdesign/css/style.css',
+					name: 'Sample stylesheet 1'
+					},
+					{
+					url: 'http://www.cindyroyal.com/webdesign/css/style2.css',
+					name: 'Sample stylesheet 2'
+					},
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/style.pdf',
+					name: 'Stylesheet Handout'
+					},
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/css.pdf',
+					name: 'CSS Properties Handout'
+					},
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/photoshop.pdf',
+					name: 'Intro. to Photoshop'
+					},
+					{
+					url: 'https://css-tricks.com/almanac/',
+					name: 'CSS Tricks Almanac'
+					},
+				],
+				assignmentsIn: [
+					'<strong>CSS Exercise:</strong> Apply CSS for graphics and layout to your HTML site.'
+				]
+			}
+			],
+			due: [
+				'CSS Exercise - Student Bio Website <em>Redesign</em>',
+			],
+		},
+		// Day 5 2-16
+		{
+			next: false,
+			date: '2017-02-16',
+			dateLabel: 'day-5',
+			dateNav: '#day-5',
+			student: 'TBA',
+			topics: [
+				'Design Principles'
+			],
+			readings: [
+			{
+			  	title: 'Basic Design Principles for Non-Designers',
+				links: [
+					{
+					url: '#tba',
+					name: 'Handout - on TRACS in Resources.'
+					}
+				],
+				assignmentsIn: [
+					'<strong>WATCH</strong> <a href="https://www.youtube.com/watch?v=VANORrzKX50&index=1&list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ">Download: The True Story of the Internet - Part 1 Browsers</a>',
+					'<strong>WATCH</strong> <a href="https://www.youtube.com/watch?v=Jjbh9FFW6VE&list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ&index=2">Download: The True Story of the Internet - Part 2 Internet Search</a>',
+					'<strong>CREATE</strong> Slack post in <a target="_blank" href="https://webdesigntxst.slack.com/?redir=%2Fmessages%2Fdownload%2F">#download</a><br/>Discussion topics:<br/><em>What elements were the most interesting?</em><br><em>What did you learn about innovation by watching these videos?</em><br><em>What has happened in the realm of digital media and technology since this video series came out?</em>'
+				]
+			}
+			]
+		},
+		// Day 6 2-23
+		{
+			next: false,
+			date: '2017-02-23',
+			dateLabel: 'day-6',
+			dateNav: '#day-6',
+			student: 'TBA',
+			topics: [
+				'Responsive Web Design'
+			],
+			readings: [
+			{
+			  	title: 'RWD Handouts and Links',
+				links: [
+					{
+					url: '#tba',
+					name: 'RWD Deck'
+					},
+					{
+						url: 'http://www.cindyroyal.com/webdesign/handouts/responsive.pdf',
+						name: 'Responsive Web Design Handout'
+					},
+					{
+						url: 'https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries',
+						name: 'Bootstrap breakpoints'
+					},
+					{
+						url: 'https://designmodo.com/responsive-design-vs-mobile-website-vs-app/',
+						name: 'Responsive vs. Mobile Site vs. Mobile App'
+					}
+				],
+				assignmentsOut: [
+					'<strong>WATCH</strong> <a href="/tutorials/bootstrap">Bootstrap tutorials</a>'
+				]
+			}
+			],
+			due: [
+				'<a href="/assignments/project-2">Project 2 - Student Bio Website Redesign 2</a>'
+			],
+		},
+		// Day 7 3-2
+		{
+			next: false,
+			date: '2017-03-02',
+			dateLabel: 'day-7',
+			dateNav: '#day-7',
+			student: 'TBA',
+			topics: [
+				'Bootstrap'
+			],
+			readings: [
+			{
+			  	title: 'Bootstrap Handouts and Links',
+				links: [
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/bootstrap_intro.pdf',
+					name: 'Intro to Bootstrap'
+					},
+					{
+						url: 'http://www.cindyroyal.com/webdesign/handouts/bootstrap_templates.pdf',
+						name: 'Bootstrap Template'
+					},
+					{
+						url: 'https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries',
+						name: 'Bootstrap breakpoints'
+					},
+					{
+						url: 'https://designmodo.com/responsive-design-vs-mobile-website-vs-app/',
+						name: 'Responsive vs. Mobile Site vs. Mobile App'
+					}
+				]
+			}
+			]
+		},
+		// Day 8 3-9
+		{
+			next: false,
+			date: '2017-03-09',
+			dateLabel: 'day-8',
+			dateNav: '#day-8',
+			student: 'TBA',
+			topics: [
+				'Bootstrap Carousel and other advanced features'
+			],
+			readings: [
+			{
+			  	title: 'Today we will continue our discussion on Bootstrap.',
+				links: [
+					{
+					url: 'http://getbootstrap.com/javascript/#carousel',
+					name: 'Bootstrap carousel example'
+					}
+				],
+				assignmentsIn: [
+					'<strong>WORK</strong> on <a href="/assignments/project-3">Project 3 - Hobby or Organization Site</a>'
+				],
+				assignmentsOut: [
+					'<strong>BRING</strong> 5 photos to include in your bootstrap slideshow next class.'
+				]
+			}
+			]
+		},
+		// Day 9 3-16
+		{
+			next: false,
+			date: '2017-03-16',
+			dateLabel: 'day-9',
+			dateNav: '#day-9',
+			readings: [
+			{
+			  	title: 'No class - Spring Breakin’',
+			}
+			]
+		},
+		// Day 10 3-23
+		{
+			next: false,
+			date: '2017-03-23',
+			dateLabel: 'day-10',
+			dateNav: '#day-10',
+			student: 'TBA',
+			topics: [
+				'Bootstrap and JS Components'
+			],
+			readings: [
+			{
+			  	title: 'Bootstrap carousel example and custom JS effects',
+				links: [
+					{
+					url: 'http://getbootstrap.com/javascript/#carousel',
+					name: 'Bootstrap carousel example'
+					},
+					{
+					url: 'http://webdesign.cindyroyal.net/files/custom.js',
+					name: 'Download and put in your js folder to use for parallax backgrounds and scroll-to-anchor effects',
+					}
+				],
+				assignmentsIn: [
+					'<strong>WORK</strong> on <a href="/assignments/project-3">Project 3 - Hobby or Organization Site</a>'
+				],
+				assignmentsOut: [
+					'<strong>BRING</strong> 5 photos to include in your bootstrap slideshow next class.'
+				]
+			},
+			],
+			due:[
+				'<a href="/assignments/project-3">Project 3 - Hobby or Organization Site</a> '
+			]
+		},
+		// Day 11 3-30
+		{
+			next: false,
+			date: '2017-03-30',
+			dateLabel: 'day-11',
+			dateNav: '#day-11',
+			student: 'TBA',
+			topics: [
+				'Multimedia Journalism'
+			],
+			readings: [
+			{
+			  	title: 'Multimedia Journalism Links and Handouts',
+				links: [
+					{
+						url: 'http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek',
+						name: 'Snow Fall: The Avalanche at Tunnel Creek – NY Times'
+					},
+					{
+						url: 'http://www.nytimes.com/newsgraphics/2013/10/27/south-china-sea/',
+						name: 'A Game of Shark and Minnow – NY Times'
+					},
+					{
+						url: 'http://www.nytimes.com/projects/2013/the-jockey/',
+						name: 'The Jockey – NY Times'
+					},
+					{
+						url: 'http://www.theguardian.com/world/interactive/2013/may/26/firestorm-bushfire-dunalley-holmes-family',
+						name: 'Firestorm – The Guardian'
+					},
+					{
+						url: 'http://inquirer.philly.com/packages/somalia/',
+						name: 'Black Hawk Down – Philadelphia Inquirer'
+					},
+					{
+						url: 'http://vimeo.com/23122965',
+						name: 'Collings Guitars – Jorge Sanhueza-Lyon'
+					},
+					{
+						url: 'http://kut.org/post/video-13th-annual-lonestar-rod-and-kustom-round',
+						name: 'Lonestar Rod and Kustom Round Up – KUT'
+					},
+					{
+						url: 'http://www.nytimes.com/packages/khtml/2007/03/30/education/20070401_GIRLS_FEATURE.html',
+						name: 'Amazing Girls – NY Times'
+					},
+					{
+						url: 'http://www.motherjones.com/special-reports/2013/12/newtown-shooting-one-year-later',
+						name: 'Newtown: One Year After – Mother Jones'
+					},
+					{
+						url: 'http://apps.npr.org/tshirt/#/title',
+						name: 'Planet Money Makes a T-Shirt – NPR'
+					},
+					{
+						url: 'https://www.youtube.com/watch?v=qAEXlLfSuBE',
+						name: 'Graffiti Permission Wall – Andrew Goodwin'
+					},
+					{
+						url: 'http://www.mediabistro.com/10000words/10-snowfall-like-projects-that-break-out-of-standard-article-templates_b17340',
+						name: '<strong>Examples and Articles:</strong> 10 Projects Like Snow Fall'
+					},
+					{
+						url: 'http://investigativenewsnetwork.org/2013/10/snowfall-for-all-small-newsrooms-can-do-immersive-storytelling-just-like-the-big-guys/',
+						name: '<strong>Examples and Articles:</strong> Snow Fall for All: Small Newsrooms Can Do Immersive Storytelling – INN'
+					},
+					{
+						url: 'http://www.interactivenarratives.org/',
+						name: '<strong>Examples and Articles:</strong> Interactive Narratives'
+					},
+					{
+						url: 'http://innovativeinteractivity.com/',
+						name: '<strong>Examples and Articles:</strong> Innovative Interactivity'
+					},
+				],
+				assignmentsIn: [
+					'<strong>WORK</strong> on <a href="http://www.cindyroyal.com/webdesign/handouts/imovie.pdf">iMovie Handout</a>'
+				]
+			},
+			]
+		},
+		// Day 12 4-6
+		{
+			next: false,
+			date: '2017-04-06',
+			dateLabel: 'day-12',
+			dateNav: '#day-12',
+			student: 'TBA',
+			topics: [
+				'Wordpress'
+			],
+			readings: [
+			{
+			  	title: 'The wonderful world of Wordpress',
+				links: [
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/wordpress_new16.pdf',
+					name: 'Intro to WordPress – using a Content Management System'
+					}
+				],
+			},
+			],
+			due:[
+				'<a href="/assignments/project-imovie">iMovie Exercise</a> '
+			]
+		},
+		// Day 13 4-13
+		{
+			next: false,
+			date: '2017-04-13',
+			dateLabel: 'day-13',
+			dateNav: '#day-13',
+			student: 'TBA',
+			topics: [
+				'Wordpress'
+			],
+			readings: [
+			{
+			  	title: 'Wordpress continued - Final Projects Kickoff',
+			  	assignmentsIn: [
+			  		'<strong>WORK</strong> on <a href="/assignments/project-final">Final Project</a>'
+			  	]
+			},
+			]
+		},
+		// Day 14 4-20
+		{
+			next: false,
+			date: '2017-04-20',
+			dateLabel: 'day-14',
+			dateNav: '#day-14',
+			student: 'TBA',
+			topics: [
+				'Wordpress'
+			],
+			readings: [
+			{
+			  	title: 'Wordpress continued - Fun with Plugins',
+				links: [
+					{
+					url: 'http://cindyroyal.com/webdesign/handouts/wpplugins.pdf',
+					name: 'Plugins Handout'
+					}
+				],
+				assignmentsIn: [
+					'<strong>WORK</strong> on <a href="/assignments/project-final">Final Project</a>'
+				]
+			},
+			]
+		},
+		// Day 15 4-27
+		{
+			next: false,
+			date: '2017-04-27',
+			dateLabel: 'day-15',
+			dateNav: '#day-15',
+			student: 'TBA',
+			topics: [
+				'Data Journalism'
+			],
+			readings: [
+			{
+			  	title: 'Data Journalism Examples and Links',
+				links: [
+					{
+						url: 'http://projects.propublica.org/docdollars/',
+						name: 'Dollars for Docs – Propublica'
+					},
+					{
+						url: 'http://www.nytimes.com/interactive/2013/12/20/sunday-review/dialect-quiz-map.html?_r=0',
+						name: 'Ya’ll, Youse and You Guys – NYT'
+					},
+					{
+						url: 'http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html?_r=0',
+						name: 'Is It Better to Rent or Buy – NYT'
+					},
+					{
+						url: 'http://www.nytimes.com/interactive/2010/02/26/sports/olympics/20100226-olysymphony.html',
+						name: 'Fractions of a Second – NYT'
+					},
+					{
+						url: 'http://project.wnyc.org/dogs-of-nyc/',
+						name: 'Dogs of NYC – WNYC'
+					},
+					{
+						url: 'http://www.texastribune.org/public-ed/explore/',
+						name: 'Public Schools Explorer – Texas Tribune'
+					},
+					{
+						url: 'http://stamen.com/clients/mtv',
+						name: 'Stamen Design – MTV Awards'
+					},
+					{
+						url: 'https://interactive.twitter.com/election2014/',
+						name: 'Election 2014 – Twitter'
+					},
+					{
+						url: 'http://www.newyorker.com/news/news-desk/interactive-a-month-of-citi-bike',
+						name: 'A Month of CitiBike – The New Yorker'
+					},
+					{
+						url: 'http://datajournalismhandbook.org/',
+						name: 'Data Journalism Handbook'
+					},
+				],
+				assignmentsIn: [
+					'<strong>WORK</strong> on <a href="/assignments/project-final">Final Project</a>'
+				]
+			},
+			],
+			due:[
+				'<a href="/assignments/project-final">Final Project DRAFT</a>'
+			]
+		},
+		// Day 16 5-4
+		{
+			next: false,
+			date: '2017-05-04',
+			dateLabel: 'day-16',
+			dateNav: '#day-16',
+			student: 'TBA',
+			topics: [
+				'Last Day of Class'
+			],
+			readings: [
+			{
+			  	title: 'Presentations',
+				assignmentsIn: [
+					'<strong>PRESENT</strong> your <a href="/assignments/project-final">Final Project</a>'
+				]
+			},
+			],
+			due:[
+				'<a href="/assignments/project-final">Final Project</a>'
+			]
+		}
 	],
 	tutorials:[
 		// Getting started
