@@ -43,9 +43,11 @@
                       <span class="project__skill highlight">{{skill}}</span>
                   </span>
                 </div>
-                <a download v-bind:href="item.rubric" class="project__cta btn btn-primary">
-                  Download Rubric
-                </a>
+                <span v-if="item.rubric">
+                  <a download v-bind:href="item.rubric" class="project__cta btn btn-primary">
+                    Download Rubric
+                  </a>
+                </span>
               </span>
             </span>
         </div>

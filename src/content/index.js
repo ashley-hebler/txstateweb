@@ -48,7 +48,7 @@ export default {
 	      url: assignmentPath+'css-exercise',
 	      percent: '5',
 	      desc: ' Apply CSS to Project 1 to create design and layout of the page',
-	      rubric: genRubric('1'),
+	      rubric: '',
 	      skills: ['CSS']
 	    },
 	  // Project 2
@@ -63,7 +63,7 @@ export default {
 	      percent: '10',
 	      objective:'Use HTML/CSS and Photoshop to redesign the personal site you made with html. You will apply Responsive Design techniques.',
 	      desc: ' Use HTML/CSS, Photoshop and Responsive Design, to completely redesign the personal site you made with html.',
-	      rubric: genRubric('2'),
+	      rubric: '',
 	      skills: ['HTML', 'CSS', 'photoshop', 'responsive design'],
 	      requirements:[
 	      		'You will use the html and css with html&nbsp;editor (Text Wrangler or other), and the graphics program,&nbsp;Photoshop, for this project.',
@@ -91,7 +91,7 @@ export default {
 	      url: assignmentPath+'css-exercise',
 	      percent: '5',
 	      desc: 'Fix problems on an existing page to demonstrate code knowledge.',
-	      rubric: genRubric('1'),
+	      rubric: '',
 	      skills: ['troubleshooting HTML', 'CSS', 'responsive design']
 	    },
 	  // Project 3
@@ -105,7 +105,7 @@ export default {
 	      percent: '10',
 	      objective: 'Use Bootstrap to make a site for a hobby or organization.',
 	      desc: 'Set up a Web site for a hobby or organization that you are affiliated (4 pages total). Must be a new site, not a redesign of an existing site. Use responsive design css.',
-	      rubric: genRubric('3'),
+	      rubric: '',
 	      skills: ['Bootstrap', 'Photoshop', 'responsive design'],
 	      requirements: [
 	      	'You will use the the Web development framework Bootstrap to create your site. You will also use&nbsp;Photoshop in designing this project.',
@@ -133,7 +133,7 @@ export default {
 	      percent: '10',
 	      objective: 'Use iMovie to create a short video including your own clips.',
 	      desc: 'Apply basic video editing concepts like cropping, splitting clips, adding audio, transitions, so you can use them in your final project.',
-	      rubric: genRubric('3'),
+	      rubric: '',
 	      skills: ['iMovie', 'basic video editing'],
 	      requirements: [
 	      	'Use the features of iMovie discussed in class and on the tutorial to create a short movie',
@@ -164,7 +164,7 @@ export default {
 	      percent: '25',
 	      objective: 'Use all the skills gained during the course to complete an extensive, multimedia reporting project. You will use WordPress as a CMS, iMovie to edit video and YouTube to host it, WP Plugins to add desired functionality and any other tools we covered.',
 	      desc: 'Use WordPress to design your Final Project – a multimedia reporting site.',
-	      rubric: genRubric('3'),
+	      rubric: '',
 	      skills: [ 'use all or any of the html/css', 'design', 'multimedia', 'framework skills that best fit nature of reporting project','Content Management Systems'],
 	      requirements: [
 	      	'<span class="highlight highlight--alt"> <svg class="icon"><use xlink:href="#alert"></use></svg>A draft of the interface (the basic WordPress site design) of the final project will be due <strong>two weeks</strong> before the end of the semester.</span>',
@@ -211,13 +211,13 @@ export default {
 	    },
 	],
 	outline:[
-		// Day 1 1-19
+		// Day 1 1-19 - no news
 		{
 		  next: true,
 		  date: '2017-01-19',
 		  dateLabel: 'day-1',
 		  dateNav: '#day-1',
-		  student: 'Ashley',
+		  student: [],
 		  topics: [
 		    'Review Syllabus, Schedule, Introductions',
 		    'History of Internet & Web',
@@ -227,13 +227,13 @@ export default {
 		    {
 		      title: 'Links for today’s discussion',
 		      links: [
+		      	{
+		      	  url: 'https://slides.com/ashleyrosehebler/using-the-web/',
+		      	  'name': 'Slide deck for today'
+		      	},
 		        {
 		        url: 'http://visual.ly/evolution-web?view=true',
 		        name: 'The Evolution of the Web'
-		        },
-		        {
-		        url: 'http://www.matisse.net/files/glossary.html',
-		        name: 'Glossary of Internet Terms'
 		        },
 		        {
 		        url: 'http://mashable.com/2012/08/22/the-internet-a-decade-later/',
@@ -262,11 +262,11 @@ export default {
 		        {
 		        url: 'http://www.learnthenet.com/animated-internet/how-the-web-works/index.php',
 		        name: 'How The Web Works'
-		        },
-		        {
-		          url: 'https://slides.com/ashleyrosehebler/using-the-web/',
-		          'name': 'Slide deck for today'
 		        }
+		      ],
+		      assignmentsIn: [
+		      '<strong>INTRO</strong> to using <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a>',
+		      '<strong>WORK</strong> on handout – <a href="http://webdes.cary-anne.com/wp-content/uploads/2013/08/basichtml.pdf">Introduction to HTML</a>',
 		      ],
 		      assignmentsOut: [
 		        '<strong>WATCH:</strong> <a href="https://www.youtube.com/watch?v=SDucuVi5FrI" target="_blank">The Internet: Behind the Web.</a>',
@@ -283,7 +283,7 @@ export default {
 		  date: '2017-01-26',
 		  dateLabel: 'day-2',
 		  dateNav: '#day-2',
-		  student: 'TBA',
+		  student: ['Ashley'],
 		  topics: [
 		    'Basic Web Design',
 		  ],
@@ -325,7 +325,7 @@ export default {
 			date: '2017-02-02',
 			dateLabel: 'day-3',
 			dateNav: '#day-3',
-			student: 'TBA',
+			student: ['Victoria', 'Tunde'],
 			topics: [
 				'HTML continued',
 			],
@@ -360,7 +360,7 @@ export default {
 			date: '2017-02-09',
 			dateLabel: 'day-4',
 			dateNav: '#day-4',
-			student: 'TBA',
+			student: ['Sidney', 'Vianey'],
 			topics: [
 				'Cascading Stylesheets (CSS) for formatting a website',
 			],
@@ -408,7 +408,7 @@ export default {
 			date: '2017-02-16',
 			dateLabel: 'day-5',
 			dateNav: '#day-5',
-			student: 'TBA',
+			student: ['Megan','Mariah'],
 			topics: [
 				'Design Principles'
 			],
@@ -435,7 +435,7 @@ export default {
 			date: '2017-02-23',
 			dateLabel: 'day-6',
 			dateNav: '#day-6',
-			student: 'TBA',
+			student: ['Robert', 'Exsar'],
 			topics: [
 				'Responsive Web Design'
 			],
@@ -475,7 +475,7 @@ export default {
 			date: '2017-03-02',
 			dateLabel: 'day-7',
 			dateNav: '#day-7',
-			student: 'TBA',
+			student: ['Zoe', 'Alexandria'],
 			topics: [
 				'Bootstrap'
 			],
@@ -509,7 +509,7 @@ export default {
 			date: '2017-03-09',
 			dateLabel: 'day-8',
 			dateNav: '#day-8',
-			student: 'TBA',
+			student: ['Selina', 'Leanda'],
 			topics: [
 				'Bootstrap Carousel and other advanced features'
 			],
@@ -531,7 +531,7 @@ export default {
 			}
 			]
 		},
-		// Day 9 3-16
+		// Day 9 3-16 - no news
 		{
 			next: false,
 			date: '2017-03-16',
@@ -549,7 +549,7 @@ export default {
 			date: '2017-03-23',
 			dateLabel: 'day-10',
 			dateNav: '#day-10',
-			student: 'TBA',
+			student: ['Colton', 'Gabriela'],
 			topics: [
 				'Bootstrap and JS Components'
 			],
@@ -584,7 +584,7 @@ export default {
 			date: '2017-03-30',
 			dateLabel: 'day-11',
 			dateNav: '#day-11',
-			student: 'TBA',
+			student: ['Jose', 'Alexander'],
 			topics: [
 				'Multimedia Journalism'
 			],
@@ -665,7 +665,7 @@ export default {
 			date: '2017-04-06',
 			dateLabel: 'day-12',
 			dateNav: '#day-12',
-			student: 'TBA',
+			student: ['Mark', 'Victoria'],
 			topics: [
 				'Wordpress'
 			],
@@ -690,7 +690,7 @@ export default {
 			date: '2017-04-13',
 			dateLabel: 'day-13',
 			dateNav: '#day-13',
-			student: 'TBA',
+			student: ['Bryan', 'Nicholas'],
 			topics: [
 				'Wordpress'
 			],
@@ -709,7 +709,7 @@ export default {
 			date: '2017-04-20',
 			dateLabel: 'day-14',
 			dateNav: '#day-14',
-			student: 'TBA',
+			student: [],
 			topics: [
 				'Wordpress'
 			],
@@ -734,7 +734,7 @@ export default {
 			date: '2017-04-27',
 			dateLabel: 'day-15',
 			dateNav: '#day-15',
-			student: 'TBA',
+			student: [],
 			topics: [
 				'Data Journalism'
 			],
@@ -792,13 +792,13 @@ export default {
 				'<a href="/assignments/project-final">Final Project DRAFT</a>'
 			]
 		},
-		// Day 16 5-4
+		// Day 16 5-4 - no news
 		{
 			next: false,
 			date: '2017-05-04',
 			dateLabel: 'day-16',
 			dateNav: '#day-16',
-			student: 'TBA',
+			student: [],
 			topics: [
 				'Last Day of Class'
 			],

@@ -18,7 +18,9 @@
           <div class="day">
             <div class="day__block day__block--title">
               <span class="day__date">{{day.date | prettyDate }}</span>
-              <span class="day__student tag">{{day.student}}</span>
+              <span class="day__student">
+                <span class="tag" v-for="(item, index) in day.student">{{item}}</span>
+              </span>
               <div class="day__item" v-for="(item, index) in day.topics">
                 <span class="highlight highlight--mute">{{item}}</span>
               </div>
@@ -70,8 +72,35 @@ export default {
   data () {
     return {
       msg: 'Outline',
-      outline: outlineList.outline
+      outline: outlineList.outline,
+      random:[
+        'Mark Alvarez',
+        'Exsar Arguello',
+        'Megan Blackwell',
+        'Victoria Chacon',
+        'Nicholas Corlis',
+        'Alexander Delgado Reed',
+        'Sidney Dorsey',
+        'Colton Farber',
+        'Leanda Harley',
+        'Bryan Juarez',
+        'Tunde Kukoyi',
+        'Mariah Mandel',
+        'Vianey Munoz',
+        'Selina Quick',
+        'Jose Salazar',
+        'Victoria Skuce',
+        'Gabriela Theard',
+        'Alexandria Walkuski',
+        'Robert Wood',
+        'Zoe Zrubek',
+      ],
+      pick: '',
     }
+  },
+  created() {
+
+    this.randomizer()
   },
   filters: {
     prettyDate: function(value) {
@@ -79,6 +108,13 @@ export default {
       return moment(String(value)).format('MMMM Do')
       }
     }
+  },
+  methods: {
+    randomizer: function(){
+        var random_no = 0;
+        random_no = Math.floor(Math.random() * this.random.length);
+        this.pick = this.random[random_no];
+    },
   }
 }
 </script>

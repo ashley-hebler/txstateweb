@@ -45,9 +45,9 @@
 	}
 	.tag {
 	  background: $brand;
-	  border-radius: 3px 0 0 3px;
+	  border-radius: 8px;
 	  color: $brand-inverse;
-	  display: inline-block;
+	  display: block;
 	  height: 26px;
 	  line-height: 26px;
 	  padding: 0 20px 0 23px;
@@ -66,22 +66,15 @@
 	  	width: 6px;
 	  	top: 10px;
 	  }
-	  &:after {
-	  	background: #fff;
-	  	border-bottom: 13px solid transparent;
-	  	border-left: 10px solid $brand;
-	  	border-top: 13px solid transparent;
-	  	content: '';
-	  	position: absolute;
-	  	right: 0;
-	  	top: 0;
-	  }
 	  .current & {
 	  	background-color: $accent;
 	  	color: $brand-black;
 	  	&:after {
 	  		border-left: 10px solid $accent;
 	  	}
+	  }
+	  @include respond-to(md-and-up) {
+	  	display: inline-block;
 	  }
 	}
 	.btn {
