@@ -270,7 +270,7 @@ export default {
 		      ],
 		      assignmentsOut: [
 		        '<strong>WATCH:</strong> <a href="https://www.youtube.com/watch?v=SDucuVi5FrI" target="_blank">The Internet: Behind the Web.</a>',
-		        '<strong>CREATE</strong> a post on our Slack discussion: <em>What was most interesting, what didn’t you know before watching?</em>',
+		        '<strong>CREATE</strong> a post on our <a href="https://web-txstate.slack.com/messages/general/">Slack discussion in the #general channel: </a><em>What was most interesting, what didn’t you know before watching?</em>',
 		        '<strong>WATCH:</strong> All the <a href="http://codeactually.com/html.html" target="_blank">HTML Tutorials on CodeActually.com.</a> We’ll review in class.'
 		      ]
 		    }
@@ -296,11 +296,11 @@ export default {
 					name: 'Intro. HTML handout'
 					},
 					{
-					url: 'http://cindyroyal.com/webdesign/handouts/htmlll.pdf',
-					name: 'Text Formatting, Images and Links'
+					url: '/static/images-and-links.pdf',
+					name: 'Images and Links'
 					},
 					{
-					url: 'http://www.cindyroyal.com/webdesign/handouts/lists_tables.pdf',
+					url: '/static/lists-tables-comments.pdf',
 					name: 'Lists and Tables handout'
 					},
 					{
@@ -391,6 +391,10 @@ export default {
 					{
 					url: 'https://css-tricks.com/almanac/',
 					name: 'CSS Tricks Almanac'
+					},
+					{
+					url: 'http://cssreference.io/',
+					name: 'Searchable CSS properties with visuals'
 					},
 				],
 				assignmentsIn: [
