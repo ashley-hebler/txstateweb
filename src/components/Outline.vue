@@ -26,7 +26,7 @@
               </div>
               <div class="day__item" v-if="day.due">
                 <div class="day__due">
-                  <h3 class="day__alert highlight highlight--alert">Due Today</h3>
+                  <h3 class="day__alert highlight highlight--alert">Due</h3>
                   <span class="day__item" v-for="item in day.due" v-html="item">{{item}}</span>
                 </div>
               </div>
@@ -56,6 +56,9 @@
                   <li><span v-html="subitem">{{ subitem }}</span></li>
                 </ul>
               </div>
+              <span v-if="day.deck">
+                <a class="day__slides" v-bind:href="day.deck" target="_blank"><svg class="icon"><use xlink:href="#slides"></use></svg> <span>Slides</span></a>
+              </span>
             </div>
           </div>
         </li>

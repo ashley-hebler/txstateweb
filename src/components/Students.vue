@@ -10,7 +10,7 @@
       <h2>Current Students</h2>
       <ul class="project__list">
         <li v-for="(item, index) in students">
-          <a v-bind:href="item.url" class="btn btn-primary">{{item.name}}</a>
+          <a target="_blank" v-bind:href="item.url" class="btn btn-primary">{{item.name}}</a>
         </li>
       </ul>
     </div>

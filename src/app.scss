@@ -301,7 +301,7 @@
 // Day
 	.day {
 		box-shadow: 0 0 2px rgba($brand-black, .3);
-		padding: 1em;
+		padding: 1em 1em 3em 1em;
 		position: relative;
 		margin: 0 0 1em;
 		&__item {
@@ -355,6 +355,26 @@
 			display: block;
 			font-size: 1.5em;
 		}
+		&__slides {
+			position: absolute;
+			right: .5em;
+			bottom: .5em;
+			color: $brand;
+			&:hover {
+				text-decoration: none;
+				color: $accent;
+			}
+			.icon {
+				width: 2em;
+				height: 2em;
+				fill: $brand;
+			}
+			.icon,
+			span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
 		@include respond-to(md-and-up) {
 			display: flex;
 			justify-content: flex-start;
@@ -399,6 +419,7 @@
 	}
 // Text Grid
 	.text-grid {
+		margin-bottom: 2em;
 		&__block {
 			margin-bottom: .5em;
 		}
@@ -464,11 +485,13 @@
 		&__list {
 			list-style: none;
 			padding: 0;
+			li {
+				margin-bottom: 1em;
+			}
 			&--numbered {
 				padding: 0;
 				li {
 					counter-increment: step-counter;
-					margin-bottom: 1em;
 					position: relative;
 					display: block;
 					padding-left: 1.2em;
@@ -520,5 +543,11 @@
 			color: $brand-inverse;
 			margin: 0;
 			padding: 1em;
+		}
+	}
+// Syllabus
+	.syllabus {
+		p {
+			line-height: 2;
 		}
 	}

@@ -44,12 +44,20 @@ export default {
 	      slug: 'css-exercise',
 	      image: false,
 	      subname: 'Student Bio Website <em>Redesign</em>',
-	      linked: false,
+	      linked: true,
 	      url: assignmentPath+'css-exercise',
 	      percent: '5',
 	      desc: ' Apply CSS to Project 1 to create design and layout of the page',
-	      rubric: '',
-	      skills: ['CSS']
+	      rubric: genRubric('2'),
+	      skills: ['CSS'],
+	      objective: 'Add small CSS enhancements to your personal website.',
+	      requirements:[
+	      		'Add style rules to your <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">heading tags</a>',
+	      		'Add style rules to your navigation. Examples: <a target="_blank" href="http://codepen.io/ahebler/pen/oBaxYo">Tabs</a> or <a target="_blank" href="http://codepen.io/ahebler/pen/ygRObY">Inline List</a>',
+	      		'Add style rules to your links',
+	      		'Change default body font. Hint: Use <a target="_blank" href="https://fonts.google.com/">Google Fonts</a> or <a target="_blank" href="http://www.cssfontstack.com/">Choose a System font with high compatibility</a>',
+	      		'Add style rules to your image(s)'
+	      ]
 	    },
 	  // Project 2
 	    {
@@ -63,7 +71,7 @@ export default {
 	      percent: '10',
 	      objective:'Use HTML/CSS and Photoshop to redesign the personal site you made with html. You will apply Responsive Design techniques.',
 	      desc: ' Use HTML/CSS, Photoshop and Responsive Design, to completely redesign the personal site you made with html.',
-	      rubric: '',
+	      rubric: genRubric('3'),
 	      skills: ['HTML', 'CSS', 'photoshop', 'responsive design'],
 	      requirements:[
 	      		'You will use the html and css with html&nbsp;editor (Text Wrangler or other), and the graphics program,&nbsp;Photoshop, for this project.',
@@ -105,7 +113,7 @@ export default {
 	      percent: '10',
 	      objective: 'Use Bootstrap to make a site for a hobby or organization.',
 	      desc: 'Set up a Web site for a hobby or organization that you are affiliated (4 pages total). Must be a new site, not a redesign of an existing site. Use responsive design css.',
-	      rubric: '',
+	      rubric: genRubric('4'),
 	      skills: ['Bootstrap', 'Photoshop', 'responsive design'],
 	      requirements: [
 	      	'You will use the the Web development framework Bootstrap to create your site. You will also use&nbsp;Photoshop in designing this project.',
@@ -133,7 +141,7 @@ export default {
 	      percent: '10',
 	      objective: 'Use iMovie to create a short video including your own clips.',
 	      desc: 'Apply basic video editing concepts like cropping, splitting clips, adding audio, transitions, so you can use them in your final project.',
-	      rubric: '',
+	      rubric: genRubric('5'),
 	      skills: ['iMovie', 'basic video editing'],
 	      requirements: [
 	      	'Use the features of iMovie discussed in class and on the tutorial to create a short movie',
@@ -213,7 +221,7 @@ export default {
 	outline:[
 		// Day 1 1-19 - no news
 		{
-		  next: true,
+		  next: false,
 		  date: '2017-01-19',
 		  dateLabel: 'day-1',
 		  dateNav: '#day-1',
@@ -276,6 +284,7 @@ export default {
 		    }
 		  ],
 		  due: '',
+		  'deck': 'http://slides.com/ashleyrosehebler/using-the-web'
 		},
 		// Day 2 1-26
 		{
@@ -310,14 +319,16 @@ export default {
 		      ],
 				assignmentsIn: [
 				'<strong>WORK</strong> on personal site – Project 1',
-				'<strong>READ:</strong> <a href="http://towknight.org/research/superpowers/" target="_blank">Superpowers The digital skills media leaders say newsrooms need going forward.</a>',
-				'<strong>CREATE</strong> Slack post in <a target="_blank" href="https://webdesigntxst.slack.com/?redir=%2Fmessages%2Fsuperpowers%2F">#superpowers</a><br/>Discussion topics:<br/><em>What do you think are the most important skills for communicators? What do you think about the results of this report in regard to your own career?</em> '
+
 				],
 				assignmentsOut: [
-					'<strong>WORK</strong> on personal site <strong>outside</strong> of class. <em>You will need to be ready to upload your site by the end of next class</em>'
+					'<strong>WORK</strong> on personal site <strong>outside</strong> of class. <em>You will need to be ready to upload your site by the end of next class</em>',
+					'<strong>READ:</strong> <a href="http://towknight.org/research/superpowers/" target="_blank">Superpowers The digital skills media leaders say newsrooms need going forward.</a>',
+					'<strong>CREATE</strong> Slack post in <a target="_blank" href="https://web-txstate.slack.com/messages/superpowers/">#superpowers</a><br/>Discussion topics:<br/><em>What do you think are the most important skills for communicators? What do you think about the results of this report in regard to your own career?</em> '
 				]
 		    }
-		  ]
+		  ],
+		  deck: 'http://slides.com/ashleyrosehebler/deck-4'
 		},
 		// Day 3 2-2
 		{
@@ -325,7 +336,7 @@ export default {
 			date: '2017-02-02',
 			dateLabel: 'day-3',
 			dateNav: '#day-3',
-			student: ['Victoria', 'Tunde'],
+			student: ['Victoria C.', 'Ola'],
 			topics: [
 				'HTML continued',
 			],
@@ -343,7 +354,8 @@ export default {
 		  			},
 		  	  	],
 				assignmentsIn: [
-					'<strong>SETUP</strong> your Reclaim Hosting account with domain',
+					'<strong>SETUP</strong> your <a href="https://reclaimhosting.com/shared-hosting/">Reclaim Hosting</a> account with domain',
+					'<strong>SEND</strong> your URL via Slack or email to Ashley. Do this by the end of class.'
 				],
 				assignmentsOut: [
 					'<strong>WATCH:</strong> <a href="/tutorials/css">CSS</a> and <a href="/tutorials/photoshop">Photoshop</a> tutorials',
@@ -353,6 +365,7 @@ export default {
 			due: [
 				'<a href="/assignments/project-1">Project 1 - Student Bio Website</a>'
 			],
+			deck: 'http://slides.com/ashleyrosehebler/deck-5'
 		},
 		// Day 4 2-9
 		{
@@ -385,10 +398,6 @@ export default {
 					name: 'CSS Properties Handout'
 					},
 					{
-					url: 'http://www.cindyroyal.com/webdesign/handouts/photoshop.pdf',
-					name: 'Intro. to Photoshop'
-					},
-					{
 					url: 'https://css-tricks.com/almanac/',
 					name: 'CSS Tricks Almanac'
 					},
@@ -399,12 +408,16 @@ export default {
 				],
 				assignmentsIn: [
 					'<strong>CSS Exercise:</strong> Apply CSS for graphics and layout to your HTML site.'
+				],
+				assignmentsOut: [
+					'<strong>Create</strong>  a Slack post in <a href="https://web-txstate.slack.com/messages/inspiration/" target="_blank">#inspiration</a> describing <em>three</em> sites you think are well designed and why? Provide links or screenshots of images that demonstrate your points.',
 				]
 			}
 			],
 			due: [
-				'CSS Exercise - Student Bio Website <em>Redesign</em>',
+				'<a href="/assignments/css-exercise">CSS Exercise - Student Bio Website <em>Redesign</em></a>',
 			],
+			deck: 'https://slides.com/ashleyrosehebler/week-4'
 		},
 		// Day 5 2-16
 		{
@@ -416,22 +429,29 @@ export default {
 			topics: [
 				'Design Principles'
 			],
-			readings: [
-			{
+			readings: [{
 			  	title: 'Basic Design Principles for Non-Designers',
 				links: [
 					{
-					url: '#tba',
-					name: 'Handout - on TRACS in Resources.'
-					}
+					url: '/static/html-css-tips.pdf',
+					name: 'Review: HTML/CSS Quick Guide'
+					},
+					{
+					url: '/static/ftp-tips.pdf',
+					name: 'Review: FTP Quick Guide'
+					},
+					{
+					url: 'https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/',
+					name: 'Principles of Effective Web Design'
+					},
+					{
+					url: 'http://www.cindyroyal.com/webdesign/handouts/photoshop.pdf',
+					name: 'Intro. to Photoshop'
+					},
 				],
-				assignmentsIn: [
-					'<strong>WATCH</strong> <a href="https://www.youtube.com/watch?v=VANORrzKX50&index=1&list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ">Download: The True Story of the Internet - Part 1 Browsers</a>',
-					'<strong>WATCH</strong> <a href="https://www.youtube.com/watch?v=Jjbh9FFW6VE&list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ&index=2">Download: The True Story of the Internet - Part 2 Internet Search</a>',
-					'<strong>CREATE</strong> Slack post in <a target="_blank" href="https://webdesigntxst.slack.com/?redir=%2Fmessages%2Fdownload%2F">#download</a><br/>Discussion topics:<br/><em>What elements were the most interesting?</em><br><em>What did you learn about innovation by watching these videos?</em><br><em>What has happened in the realm of digital media and technology since this video series came out?</em>'
-				]
 			}
-			]
+			],
+			deck: 'https://slides.com/ashleyrosehebler/week-5/'
 		},
 		// Day 6 2-23
 		{
@@ -448,12 +468,12 @@ export default {
 			  	title: 'RWD Handouts and Links',
 				links: [
 					{
-					url: '#tba',
-					name: 'RWD Deck'
+					url: '/static/rwd.pdf',
+					name: 'Responsive Web Design Handout'
 					},
 					{
 						url: 'http://www.cindyroyal.com/webdesign/handouts/responsive.pdf',
-						name: 'Responsive Web Design Handout'
+						name: 'Responsive Web Design Background'
 					},
 					{
 						url: 'https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries',
@@ -466,12 +486,13 @@ export default {
 				],
 				assignmentsOut: [
 					'<strong>WATCH</strong> <a href="/tutorials/bootstrap">Bootstrap tutorials</a>'
-				]
+				],
 			}
 			],
 			due: [
 				'<a href="/assignments/project-2">Project 2 - Student Bio Website Redesign 2</a>'
 			],
+			deck: 'https://slides.com/ashleyrosehebler/week-6/'
 		},
 		// Day 7 3-2
 		{
@@ -484,28 +505,37 @@ export default {
 				'Bootstrap'
 			],
 			readings: [
-			{
-			  	title: 'Bootstrap Handouts and Links',
-				links: [
-					{
-					url: 'http://www.cindyroyal.com/webdesign/handouts/bootstrap_intro.pdf',
-					name: 'Intro to Bootstrap'
-					},
-					{
-						url: 'http://www.cindyroyal.com/webdesign/handouts/bootstrap_templates.pdf',
-						name: 'Bootstrap Template'
-					},
-					{
-						url: 'https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries',
-						name: 'Bootstrap breakpoints'
-					},
-					{
-						url: 'https://designmodo.com/responsive-design-vs-mobile-website-vs-app/',
-						name: 'Responsive vs. Mobile Site vs. Mobile App'
-					}
-				]
-			}
-			]
+				{
+				  	title: 'Bootstrap Handouts and Links',
+					links: [
+						{
+						url: 'http://www.cindyroyal.com/webdesign/handouts/bootstrap_intro.pdf',
+						name: 'Intro to Bootstrap'
+						},
+						{
+							url: 'http://www.cindyroyal.com/webdesign/handouts/bootstrap_templates.pdf',
+							name: 'Bootstrap Template'
+						},
+						{
+						url: '/static/bootstrap_template2017.zip',
+						name: 'Bootstrap starter files'
+						},
+						{
+						url: 'https://startbootstrap.com/',
+						name: 'Bootstrap template library'
+						},
+					],
+					assignmentsIn: [
+						'<strong>QUIZ:</strong> You will be given an HTML page with a series of coding problems. Fix the problems, document those fixes, upload to your Dropbox on TRACS, and print out documentation of fixes. Turn in by end of class.<br><strong>Look for the link to the quiz in slides.</strong>',
+					],
+					assignmentsOut: [
+						'<strong>WATCH</strong> <a href="https://www.youtube.com/watch?v=VANORrzKX50&index=1&list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ">Download: The True Story of the Internet - Part 1 Browsers</a>',
+						'<strong>WATCH</strong> <a href="https://www.youtube.com/watch?v=Jjbh9FFW6VE&list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ&index=2">Download: The True Story of the Internet - Part 2 Internet Search</a>',
+						'<strong>CREATE</strong> Slack post in <a target="_blank" href="https://web-txstate.slack.com/messages/download/details/">#download</a><br/>Discussion topics:<br/><em>What elements were the most interesting?</em><br><em>What did you learn about innovation by watching these videos?</em><br><em>What has happened in the realm of digital media and technology since this video series came out?</em>'
+					],
+				}
+			],
+			deck: 'https://slides.com/ashleyrosehebler/week-7/'
 		},
 		// Day 8 3-9
 		{
@@ -515,15 +545,19 @@ export default {
 			dateNav: '#day-8',
 			student: ['Selina', 'Leanda'],
 			topics: [
-				'Bootstrap Carousel and other advanced features'
+				'Using Bootstrap templates'
 			],
 			readings: [
 			{
 			  	title: 'Today we will continue our discussion on Bootstrap.',
 				links: [
 					{
-					url: 'http://getbootstrap.com/javascript/#carousel',
-					name: 'Bootstrap carousel example'
+					url: 'https://community.reclaimhosting.com/t/creating-and-managing-subdomains/360',
+					name: 'Setting up a subdomain'
+					},
+					{
+					url: '/static/project-3-tips.pdf',
+					name: 'Getting started with templating'
 					}
 				],
 				assignmentsIn: [
@@ -533,7 +567,8 @@ export default {
 					'<strong>BRING</strong> 5 photos to include in your bootstrap slideshow next class.'
 				]
 			}
-			]
+			],
+			deck: 'https://slides.com/ashleyrosehebler/week-8/'
 		},
 		// Day 9 3-16 - no news
 		{
@@ -553,7 +588,7 @@ export default {
 			date: '2017-03-23',
 			dateLabel: 'day-10',
 			dateNav: '#day-10',
-			student: ['Colton', 'Gabriela'],
+			student: ['Colton'],
 			topics: [
 				'Bootstrap and JS Components'
 			],
@@ -562,29 +597,30 @@ export default {
 			  	title: 'Bootstrap carousel example and custom JS effects',
 				links: [
 					{
-					url: 'http://getbootstrap.com/javascript/#carousel',
-					name: 'Bootstrap carousel example'
+					url: '/static/bootstrap-sample.zip',
+					name: 'JS Demo/Exercise 1',
 					},
 					{
-					url: 'http://webdesign.cindyroyal.net/files/custom.js',
-					name: 'Download and put in your js folder to use for parallax backgrounds and scroll-to-anchor effects',
+					url: '/static/carousel.pdf',
+					name: 'Bootstrap carousel example/Exercise 2'
 					}
 				],
 				assignmentsIn: [
 					'<strong>WORK</strong> on <a href="/assignments/project-3">Project 3 - Hobby or Organization Site</a>'
 				],
 				assignmentsOut: [
-					'<strong>BRING</strong> 5 photos to include in your bootstrap slideshow next class.'
+					'<strong>BRING</strong> Bring in a 3-minute interview with a friend, co-worker, acquaintance or student for iMovie exercise'
 				]
 			},
 			],
+			deck: 'https://slides.com/ashleyrosehebler/week-9/',
 			due:[
 				'<a href="/assignments/project-3">Project 3 - Hobby or Organization Site</a> '
 			]
 		},
 		// Day 11 3-30
 		{
-			next: false,
+			next: true,
 			date: '2017-03-30',
 			dateLabel: 'day-11',
 			dateNav: '#day-11',
@@ -659,9 +695,10 @@ export default {
 				],
 				assignmentsIn: [
 					'<strong>WORK</strong> on <a href="http://www.cindyroyal.com/webdesign/handouts/imovie.pdf">iMovie Handout</a>'
-				]
+				],
 			},
-			]
+			],
+			deck: 'https://slides.com/ashleyrosehebler/week-10/',
 		},
 		// Day 12 4-6
 		{
@@ -669,7 +706,7 @@ export default {
 			date: '2017-04-06',
 			dateLabel: 'day-12',
 			dateNav: '#day-12',
-			student: ['Mark', 'Victoria'],
+			student: ['Mark', 'Victoria S.'],
 			topics: [
 				'Wordpress'
 			],
@@ -740,7 +777,7 @@ export default {
 			dateNav: '#day-15',
 			student: [],
 			topics: [
-				'Data Journalism'
+				'Data Journalism - Last day of class'
 			],
 			readings: [
 			{
@@ -788,6 +825,7 @@ export default {
 					},
 				],
 				assignmentsIn: [
+					'<strong>PRESENT</strong> your <a href="/assignments/project-final">Final Project Draft</a>',
 					'<strong>WORK</strong> on <a href="/assignments/project-final">Final Project</a>'
 				]
 			},
@@ -804,18 +842,15 @@ export default {
 			dateNav: '#day-16',
 			student: [],
 			topics: [
-				'Last Day of Class'
+				'Scheduled Finals Day'
 			],
 			readings: [
 			{
-			  	title: 'Presentations',
-				assignmentsIn: [
-					'<strong>PRESENT</strong> your <a href="/assignments/project-final">Final Project</a>'
-				]
+			  	title: 'No class - work on Final Project',
 			},
 			],
 			due:[
-				'<a href="/assignments/project-final">Final Project</a>'
+				'<a href="/assignments/project-final">Final Project - <strong>5/9 by Midnight</strong></a>'
 			]
 		}
 	],
@@ -977,9 +1012,85 @@ export default {
 	],
 	students:[
 		{
-			name: 'Student Name',
-			url:'/',
-		}
+			name: 'Mark Alvarez',
+			url:'http://thealtruistmanifesto.com/'
+		},
+		{
+			name: 'Exsar Arguello',
+			url:'http://exsarmisael.com/'
+		},
+		{
+			name: 'Megan Blackwell',
+			url: 'http://www.mjaneblackwell.com/'
+		},
+		{
+			name: 'Victoria Chacon',
+			url: 'http://victoriachacon97.com/'
+		},
+		{
+			name: 'Nick Corlis',
+			url: 'http://circuitdreaming.com/'
+		},
+		{
+			name: '	Alexander Delgado Reed',
+			url: 'http://alexanderdelgadoreed.com/'
+		},
+		{
+			name: '	Sidney Dorsey',
+			url: 'http://sidneydorsey.com/'
+		},
+		{
+			name: 'Colton Farber',
+			url: 'http://www.coltonfarber.com/'
+		},
+		{
+			name: '	Leanda Harley',
+			url: 'http://leandaharley.com/'
+		},
+		{
+			name: 'Bryan Juarez',
+			url: 'http://itsjustbryan.com/'
+		},
+		{
+			name: 'Ola Kukoyi',
+			url: 'http://olakuks.com/'
+		},
+		{
+			name: 'Mariah Mandel',
+			url: 'http://mariahmandel.info/'
+		},
+		{
+			name: 'Vianey Munoz',
+			url: 'http://heyitsney.com/'
+		},
+		{
+			name: 'Selina Quick',
+			url: 'http://selinassucculents.com/'
+		},
+		{
+			name: 'Joey Salazar',
+			url: 'http://joeymsalazar.com/'
+		},
+		{
+			name: 'Victoria Skuce',
+			url: 'http://victoriaskuce.com/'
+		},
+		{
+			name: 'Gabi Theard',
+			url: 'http://gabitheard.com/'
+		},
+		{
+			name: 'Alex Walkuski',
+			url: 'http://alexwalkuski.com/'
+		},
+		{
+			name: 'Robert Wood',
+			url: 'http://robertlamarwood.com/'
+		},
+		{
+			name: 'Zoe Zrubek',
+			url: 'http://zozru.com/'
+		},
 	]
 }
 
