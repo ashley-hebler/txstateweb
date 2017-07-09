@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueScrollTo from 'vue-scrollto'
 
 /* eslint-disable no-new */
 new Vue({
@@ -11,3 +12,4 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+Vue.use(VueScrollTo)

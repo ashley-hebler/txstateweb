@@ -44,7 +44,7 @@
 		}
 	}
 	.tag {
-	  background: $brand;
+	  background-color: $brand;
 	  border-radius: 8px;
 	  color: $brand-inverse;
 	  display: block;
@@ -55,6 +55,11 @@
 	  margin: 0 10px 10px 0;
 	  text-decoration: none;
 	  -webkit-transition: color 0.2s;
+	  &:hover {
+	  	color: #fff;
+	  	text-decoration: none;
+	  	background-color: lighten($brand, 13%);
+	  }
 	  &:before {
 	  	background: #fff;
 	  	border-radius: 10px;
@@ -66,7 +71,8 @@
 	  	width: 6px;
 	  	top: 10px;
 	  }
-	  .current & {
+	  .current &,
+	  &.current {
 	  	background-color: $accent;
 	  	color: $brand-black;
 	  	&:after {
@@ -90,11 +96,29 @@
 			text-transform: uppercase;
 			font-weight: bold;
 			@include lsp(100);
-			&:hover {
+			&:hover,
+			&:focus,
+			&:active {
 				color: $brand-black;
 				background-color: lighten($accent, 10%);
 			}
 		}
+	}
+	p {
+		line-height: 2rem;
+		margin-top: 1.4rem;
+		margin-bottom: 1.4rem;
+		padding-right: 0;
+		vertical-align: baseline;
+	}
+	p, ol, ul {
+	    font-size: 1.2rem;
+	}
+	a {
+		color: $brand-dark;
+	}
+	.print-only {
+		display: none;
 	}
 // Site Wrap
 	.site-wrap {
@@ -130,13 +154,86 @@
 			}
 		}
 	}
+// Logo
+	.logo {
+		fill: $accent;
+		width: 7em;
+	    height: 3em;
+		position: absolute;
+		left: 0;
+		top: .3em;
+	}
 // Footer
 	.footer {
+		position: relative;
 		color: $brand-inverse;
 		padding: 1em 0;
 		font-size: .8em;
+		text-align: center;
+		z-index: 100;
+		background-color: $brand-dark;
 		a {
 			color: $brand-inverse;
+		}
+		&__list {
+			margin: 1em 0;
+			list-style: none;
+			padding: 0;
+			a {
+				display: inline-block;
+				position: relative;
+				.c-tooltip {
+					position: absolute;
+					bottom: 100%;
+					left: -1em;
+					background-color: $accent;
+					color: $brand-dark;
+					display: inline-block;
+					padding: .3em;
+					border-radius: 3px;
+					opacity: 0;
+					visibility: hidden;
+					text-align: left;
+					white-space: nowrap;
+				}
+				&:hover {
+					.c-tooltip {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+			.icon {
+				fill: #fff;
+				width: 2em;
+				height: 2em;
+				&--small {
+					width: 1em;
+					height: 1em;
+				}
+			}
+		}
+		&__copy {
+			a {
+				text-decoration: underline;
+			}
+		}
+		@include respond-to(sm-and-up) {
+			text-align: left;
+			&__inner {
+				display: grid;
+				grid-template-columns: 50% 50%;
+				align-items: center;
+			}
+			&__list {
+				margin: 0;
+				text-align: right;
+				li {
+					display: inline-block;
+					vertical-align: middle;
+					margin: 0 .3em;
+				}
+			}
 		}
 	}
 // Content
@@ -160,7 +257,15 @@
 		}
 	}
 // Main Nav
+	.navbar-collapse {
+		text-align: right;
+		position: relative;
+	}
 	.main-nav {
+		text-align: center;
+		float: none;
+		display: inline-block;
+		font-size: 1em;
 		li {
 			a.main-nav__link {
 				color: $brand-inverse;
@@ -172,7 +277,6 @@
 				}
 			}
 		}
-
 	}
 // Navbar Toggle
 	.navbar-default .navbar-toggle,
@@ -214,20 +318,26 @@
 	}
 // Page Title
 	.page-title {
-		padding: 1em 0;
+		padding: 3em 0;
 		margin: 0;
 		color: $accent;
 		position: relative;
 		background-position: center center;
 		background-size: cover;
+		background-attachment: fixed;
+		text-align: center;
+		font-weight: 300;
 		span {
 			position: relative;
 		}
 		&__sub {
 			display: block;
 			font-size: .5em;
+			margin-top: .5em;
 			text-transform: uppercase;
-			color: $brand-inverse
+			color: $brand-inverse;
+			font-weight: bold;
+			@include lsp(50);
 		}
 		&:before {
 			content: '';
@@ -301,9 +411,9 @@
 // Day
 	.day {
 		box-shadow: 0 0 2px rgba($brand-black, .3);
-		padding: 1em 1em 3em 1em;
+		padding: 4em 1em 4em 1em;
 		position: relative;
-		margin: 0 0 1em;
+		margin: 0 0 3em;
 		&__item {
 			margin-bottom: .5em;
 			display: block;
@@ -333,11 +443,6 @@
 			text-align: center;
 			margin-bottom: 1em;
 			font-size: 1.5em;
-		}
-		&__student {
-			position: absolute;
-			top: 0;
-			left: 0;
 		}
 		&__list {
 			padding: 0;
@@ -373,6 +478,13 @@
 			span {
 				display: inline-block;
 				vertical-align: middle;
+			}
+		}
+		@include respond-to(sm-and-up) {
+			&__student {
+				position: absolute;
+				top: 0;
+				left: 0;
 			}
 		}
 		@include respond-to(md-and-up) {
@@ -415,6 +527,15 @@
 		margin-top: 2em;
 		&__block {
 			box-shadow: 0 0 3px rgba($brand-black, .3);
+		}
+		@include respond-to(md-and-up) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 2em;
+			grid-row-gap: 2em;
+			&__block {
+				position: relative;
+			}
 		}
 	}
 // Text Grid
@@ -511,9 +632,7 @@
 			}
 		}
 		@include respond-to(md-and-up) {
-			&__block {
-				position: relative;
-			}
+			padding-bottom: 1em;
 			&__title {
 				padding: .8em .5em;
 			}
@@ -525,6 +644,12 @@
 				right: 0;
 				position: absolute;
 				border-radius: 0 0 0 8px;
+			}
+			&__cta {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
 			}
 		}
 	}
@@ -549,5 +674,59 @@
 	.syllabus {
 		p {
 			line-height: 2;
+		}
+	}
+// Date Nav
+	.date-nav {
+		padding-top: 2em;
+		list-style: none;
+		&__item {
+			display: inline-block;
+			cursor: pointer;
+			a:focus {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+// Breadcrumbs
+	.breadcrumbs {
+		background-color: $brand-dark;
+		color: #fff;
+		padding: 1em 0;
+		a {
+			color: #fff;
+		}
+		.current {
+			color: $accent;
+		}
+	}
+// Print Btn
+	.print-btn {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		&:focus,
+		&:active {
+			.icon {
+				fill: lighten($brand-dark, 15%);
+			}
+		}
+		.icon {
+			width: 2em;
+			height: 2em;
+			fill: $brand-dark;
+		}
+	}
+// Back to Top
+	.back-top {
+		transition: opacity .3s;
+		position: fixed;
+		bottom: 1em;
+		right: 1em;
+		opacity: .3;
+		z-index: 10;
+		&:hover {
+			opacity: 1;
 		}
 	}

@@ -7,10 +7,20 @@
       </div>
     </h1>
     <div class="container content">
-      <h2>Current Students</h2>
+      <h2>Fall 2017</h2>
       <ul class="project__list">
         <li v-for="(item, index) in students">
-          <a target="_blank" v-bind:href="item.url" class="btn btn-primary">{{item.name}}</a>
+          <span v-if="'Fall 2017' === item.class">
+            <a target="_blank" v-bind:href="item.url" class="btn btn-primary">{{item.name}}</a>
+          </span>
+        </li>
+      </ul>
+      <h2>Spring 2017</h2>
+      <ul class="project__list">
+        <li v-for="(item, index) in students">
+          <span v-if="'Spring 2017' === item.class">
+            <a target="_blank" v-bind:href="item.url" class="btn btn-primary">{{item.name}}</a>
+          </span>
         </li>
       </ul>
     </div>

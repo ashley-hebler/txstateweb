@@ -51,6 +51,10 @@ module.exports = {
         loader: 'json'
       },
       {
+        test: /\.md$/,
+        loader: 'vue-markdown-loader'
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url',
         query: {

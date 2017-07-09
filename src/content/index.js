@@ -2,11 +2,13 @@ import Vue from 'vue'
 
 var assignmentPath = '/assignments/';
 var tutorialPath = '/tutorials/';
+var handoutPath = '/handouts/';
 var rubricPath = '/static/rubrics/rubric-';
 var rubricExt = '.xlsx';
 function genRubric(num) {
   return rubricPath+num+rubricExt;
 }
+// Cmd K3
 export default {
     assignments: [
         // Project 1
@@ -219,10 +221,10 @@ export default {
         },
     ],
     outline: [
-        // Day 1 1-19 - no news
+        // Day 1 8-31 - no news
         {
-            next: false,
-            date: '2017-01-19',
+            next: true,
+            date: '2017-08-31',
             dateLabel: 'day-1',
             dateNav: '#day-1',
             student: [],
@@ -233,24 +235,15 @@ export default {
             ],
             readings: [{
                 title: 'Links for today’s discussion',
-                links: [{
-                    url: 'https://slides.com/ashleyrosehebler/using-the-web/',
-                    'name': 'Slide deck for today'
-                }, {
-                    url: 'http://visual.ly/evolution-web?view=true',
-                    name: 'The Evolution of the Web'
-                }, {
-                    url: 'http://mashable.com/2012/08/22/the-internet-a-decade-later/',
-                    name: 'The Internet: A Decade Later'
+                links: [ {
+                    url: 'https://i.amz.mshcdn.com/vOFThhJkBRkCUXQqA9SS5O_oYA8=/fit-in/1200x9600/http%3A%2F%2Fmashable.com%2Fwp-content%2Fuploads%2F2012%2F08%2FInternet-Decade-Later-Infographic.gif',
+                    name: 'The Internet: A Decade Later (2012 Stats)'
                 }, {
                     url: 'http://www.forbes.com/sites/jaysondemers/2016/04/18/7-predictions-for-how-the-internet-will-change-over-the-next-15-years/#5581e2a478dc',
                     name: '7 Predictions for How the Internet Will Change Over the Next 15 Years - Forbes 2016'
                 }, {
-                    url: 'http://www.kpcb.com/internet-trends',
+                    url: '/static/2016_Internet_Trends.pdf',
                     name: 'KPCB Internet Trends - 2016'
-                }, {
-                    url: 'https://vimeo.com/113124865',
-                    name: 'History of the Internet'
                 }, {
                     url: 'https://infopeople.org/content/best-search-tools-chart',
                     name: 'InfoPeople Search Tools Chart'
@@ -262,8 +255,8 @@ export default {
                     name: 'How The Web Works'
                 }],
                 assignmentsIn: [
-                    '<strong>INTRO</strong> to using <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a>',
-                    '<strong>WORK</strong> on handout – <a href="http://webdes.cary-anne.com/wp-content/uploads/2013/08/basichtml.pdf">Introduction to HTML</a>',
+                    '<strong>INTRO</strong> to using <a href="https://www.sublimetext.com/">Sublime</a>',
+                    '<strong>WORK</strong> on handout – <a href="/handouts/intro-to-html">Introduction to HTML</a>',
                 ],
                 assignmentsOut: [
                     '<strong>WATCH:</strong> <a href="https://www.youtube.com/watch?v=SDucuVi5FrI" target="_blank">The Internet: Behind the Web.</a>',
@@ -274,10 +267,10 @@ export default {
             due: '',
             'deck': 'http://slides.com/ashleyrosehebler/using-the-web'
         },
-        // Day 2 1-26
+        // Day 2 9-7
         {
             next: false,
-            date: '2017-01-26',
+            date: '2017-09-07',
             dateLabel: 'day-2',
             dateNav: '#day-2',
             student: ['Ashley'],
@@ -286,15 +279,13 @@ export default {
             ],
             readings: [{
                 title: 'Handouts and links for today',
-                links: [{
-                    url: 'http://cindyroyal.com/webdesign/handouts/basichtml.pdf',
-                    name: 'Intro. HTML handout'
-                }, {
-                    url: '/static/images-and-links.pdf',
+                links: [
+                {
+                    url: '/handouts/images-and-links',
                     name: 'Images and Links'
                 }, {
-                    url: '/static/lists-tables-comments.pdf',
-                    name: 'Lists and Tables handout'
+                    url: '/handouts/lists-tables',
+                    name: 'Lists and Tables'
                 }, {
                     url: 'https://reclaimhosting.com/',
                     name: 'Web Hosting – Reclaim Hosting.  We’ll discuss in class.'
@@ -311,10 +302,10 @@ export default {
             }],
             deck: 'http://slides.com/ashleyrosehebler/deck-4'
         },
-        // Day 3 2-2
+        // Day 3 9-14
         {
             next: false,
-            date: '2017-02-02',
+            date: '2017-09-14',
             dateLabel: 'day-3',
             dateNav: '#day-3',
             student: ['Victoria C.', 'Ola'],
@@ -343,10 +334,10 @@ export default {
             ],
             deck: 'http://slides.com/ashleyrosehebler/deck-5'
         },
-        // Day 4 2-9
+        // Day 4 9-21
         {
             next: false,
-            date: '2017-02-09',
+            date: '2017-09-21',
             dateLabel: 'day-4',
             dateNav: '#day-4',
             student: ['Sidney', 'Vianey'],
@@ -386,10 +377,10 @@ export default {
             ],
             deck: 'https://slides.com/ashleyrosehebler/week-4'
         },
-        // Day 5 2-16
+        // Day 5 9-28
         {
             next: false,
-            date: '2017-02-16',
+            date: '2017-09-28',
             dateLabel: 'day-5',
             dateNav: '#day-5',
             student: ['Megan', 'Mariah'],
@@ -414,10 +405,10 @@ export default {
             }],
             deck: 'https://slides.com/ashleyrosehebler/week-5/'
         },
-        // Day 6 2-23
+        // Day 6 10-5
         {
             next: false,
-            date: '2017-02-23',
+            date: '2017-10-05',
             dateLabel: 'day-6',
             dateNav: '#day-6',
             student: ['Robert', 'Exsar'],
@@ -448,10 +439,10 @@ export default {
             ],
             deck: 'https://slides.com/ashleyrosehebler/week-6/'
         },
-        // Day 7 3-2
+        // Day 7 10-12
         {
             next: false,
-            date: '2017-03-02',
+            date: '2017-10-12',
             dateLabel: 'day-7',
             dateNav: '#day-7',
             student: ['Zoe', 'Alexandria'],
@@ -484,10 +475,10 @@ export default {
             }],
             deck: 'https://slides.com/ashleyrosehebler/week-7/'
         },
-        // Day 8 3-9
+        // Day 8 10-19
         {
             next: false,
-            date: '2017-03-09',
+            date: '2017-10-19',
             dateLabel: 'day-8',
             dateNav: '#day-8',
             student: ['Selina', 'Leanda'],
@@ -512,22 +503,12 @@ export default {
             }],
             deck: 'https://slides.com/ashleyrosehebler/week-8/'
         },
-        // Day 9 3-16 - no news
+        // Day 9 10-26
         {
             next: false,
-            date: '2017-03-16',
+            date: '2017-10-26',
             dateLabel: 'day-9',
             dateNav: '#day-9',
-            readings: [{
-                title: 'No class - Spring Breakin’',
-            }]
-        },
-        // Day 10 3-23
-        {
-            next: false,
-            date: '2017-03-23',
-            dateLabel: 'day-10',
-            dateNav: '#day-10',
             student: ['Colton'],
             topics: [
                 'Bootstrap and JS Components'
@@ -553,12 +534,12 @@ export default {
                 '<a href="/assignments/project-3">Project 3 - Hobby or Organization Site</a> '
             ]
         },
-        // Day 11 3-30
+        // Day 10 11-2
         {
             next: false,
-            date: '2017-03-30',
-            dateLabel: 'day-11',
-            dateNav: '#day-11',
+            date: '2017-11-2',
+            dateLabel: 'day-10',
+            dateNav: '#day-10',
             student: ['Jose', 'Alexander'],
             topics: [
                 'Multimedia Journalism'
@@ -617,12 +598,12 @@ export default {
             }, ],
             deck: 'https://slides.com/ashleyrosehebler/week-10/',
         },
-        // Day 12 4-6
+        // Day 11 11-9
         {
             next: false,
-            date: '2017-04-06',
-            dateLabel: 'day-12',
-            dateNav: '#day-12',
+            date: '2017-11-09',
+            dateLabel: 'day-11',
+            dateNav: '#day-11',
             student: ['Mark', 'Victoria S.'],
             topics: [
                 'Wordpress'
@@ -639,12 +620,12 @@ export default {
             ],
             deck: 'https://slides.com/ashleyrosehebler/week-11/',
         },
-        // Day 13 4-13
+        // Day 12 11-16
         {
             next: false,
-            date: '2017-04-13',
-            dateLabel: 'day-13',
-            dateNav: '#day-13',
+            date: '2017-11-16',
+            dateLabel: 'day-12',
+            dateNav: '#day-12',
             student: ['Bryan', 'Nicholas'],
             topics: [
                 'Wordpress'
@@ -661,10 +642,21 @@ export default {
             }, ],
             deck: 'https://slides.com/ashleyrosehebler/week-12/',
         },
-        // Day 14 4-20
+        // Day 13 11-23
         {
             next: false,
-            date: '2017-04-20',
+            date: '2017-11-23',
+            dateLabel: 'day-13',
+            dateNav: '#day-13',
+            student: [],
+            topics: [
+                'No class'
+            ]
+        },
+        // Day 14 11-30
+        {
+            next: false,
+            date: '2017-11-30',
             dateLabel: 'day-14',
             dateNav: '#day-14',
             student: [],
@@ -689,10 +681,10 @@ export default {
             }, ],
             deck: 'https://slides.com/ashleyrosehebler/week-13/',
         },
-        // Day 15 4-27
+        // Day 15 12-7
         {
-            next: true,
-            date: '2017-04-27',
+            next: false,
+            date: '2017-12-07',
             dateLabel: 'day-15',
             dateNav: '#day-15',
             student: [],
@@ -742,10 +734,10 @@ export default {
             ],
             deck: 'https://slides.com/ashleyrosehebler/week-14/'
         },
-        // Day 16 5-4 - no news
+        // Day 16 12-14
         {
             next: false,
-            date: '2017-05-04',
+            date: '2017-12-14',
             dateLabel: 'day-16',
             dateNav: '#day-16',
             student: [],
@@ -890,64 +882,166 @@ export default {
             }]
         },
     ],
-    students: [{
-        name: 'Mark Alvarez',
-        url: 'http://thealtruistmanifesto.com/'
-    }, {
-        name: 'Exsar Arguello',
-        url: 'http://exsarmisael.com/'
-    }, {
-        name: 'Megan Blackwell',
-        url: 'http://www.mjaneblackwell.com/'
-    }, {
-        name: 'Victoria Chacon',
-        url: 'http://victoriachacon97.com/'
-    }, {
-        name: 'Nick Corlis',
-        url: 'http://circuitdreaming.com/'
-    }, {
-        name: '	Alexander Delgado Reed',
-        url: 'http://alexanderdelgadoreed.com/'
-    }, {
-        name: '	Sidney Dorsey',
-        url: 'http://sidneydorsey.com/'
-    }, {
-        name: 'Colton Farber',
-        url: 'http://www.coltonfarber.com/'
-    }, {
-        name: '	Leanda Harley',
-        url: 'http://leandaharley.com/'
-    }, {
-        name: 'Bryan Juarez',
-        url: 'http://itsjustbryan.com/'
-    }, {
-        name: 'Ola Kukoyi',
-        url: 'http://olakuks.com/'
-    }, {
-        name: 'Mariah Mandel',
-        url: 'http://mariahmandel.info/'
-    }, {
-        name: 'Vianey Munoz',
-        url: 'http://heyitsney.com/'
-    }, {
-        name: 'Selina Quick',
-        url: 'http://selinassucculents.com/'
-    }, {
-        name: 'Joey Salazar',
-        url: 'http://joeymsalazar.com/'
-    }, {
-        name: 'Victoria Skuce',
-        url: 'http://victoriaskuce.com/'
-    }, {
-        name: 'Alex Walkuski',
-        url: 'http://alexwalkuski.com/'
-    }, {
-        name: 'Robert Wood',
-        url: 'http://robertlamarwood.com/'
-    }, {
-        name: 'Zoe Zrubek',
-        url: 'http://zozru.com/'
-    }, ]
+    students: [
+        {
+            name: 'TBA',
+            url: '#',
+            class: 'Fall 2017'
+        },
+        {
+            name: 'Mark Alvarez',
+            url: 'http://thealtruistmanifesto.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Exsar Arguello',
+            url: 'http://exsarmisael.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Megan Blackwell',
+            url: 'http://www.mjaneblackwell.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Victoria Chacon',
+            url: 'http://victoriachacon97.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Nick Corlis',
+            url: 'http://circuitdreaming.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: '	Alexander Delgado Reed',
+            url: 'http://alexanderdelgadoreed.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: '	Sidney Dorsey',
+            url: 'http://sidneydorsey.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Colton Farber',
+            url: 'http://www.coltonfarber.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: '	Leanda Harley',
+            url: 'http://leandaharley.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Bryan Juarez',
+            url: 'http://itsjustbryan.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Ola Kukoyi',
+            url: 'http://olakuks.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Mariah Mandel',
+            url: 'http://mariahmandel.info/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Vianey Munoz',
+            url: 'http://heyitsney.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Selina Quick',
+            url: 'http://selinassucculents.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Joey Salazar',
+            url: 'http://joeymsalazar.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Victoria Skuce',
+            url: 'http://victoriaskuce.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Alex Walkuski',
+            url: 'http://alexwalkuski.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Robert Wood',
+            url: 'http://robertlamarwood.com/',
+            class: 'Spring 2017'
+        },
+        {
+            name: 'Zoe Zrubek',
+            url: 'http://zozru.com/',
+            class: 'Spring 2017'
+        },
+    ],
+    handouts: [
+        {
+            name: 'Intro to HTML',
+            slug: 'intro-to-html',
+            image: false,
+            url: handoutPath + 'intro-to-html',
+            skills: ['HTML'],
+        },
+        {
+            name: 'Images and Links',
+            slug: 'images-and-links',
+            image: false,
+            url: handoutPath + 'images-and-links',
+            skills: ['HTML'],
+        },
+        {
+            name: 'Lists and Tables',
+            slug: 'lists-and-tables',
+            image: false,
+            url: handoutPath + 'lists-and-tables',
+            skills: ['HTML'],
+        },
+        {
+            name: 'HTML and CSS tips',
+            slug: 'html-css-tips',
+            image: false,
+            url: handoutPath + 'html-css-tips',
+            skills: ['HTML', 'CSS'],
+        },
+        {
+            name: 'FTP Tips',
+            slug: 'ftp-tips',
+            image: false,
+            url: handoutPath + 'ftp-tips',
+            skills: ['FTP'],
+        },
+        {
+            name: 'Responsive Web Design',
+            slug: 'rwd',
+            image: false,
+            url: handoutPath + 'rwd',
+            skills: ['CSS'],
+        },
+        {
+            name: 'Project 3 Tips',
+            slug: 'project-3-tips',
+            image: false,
+            url: handoutPath + 'project-3-tips',
+            skills: ['FTP'],
+        },
+        {
+            name: 'Carousel',
+            slug: 'carousel',
+            image: false,
+            url: handoutPath + 'carousel',
+            skills: ['JS'],
+        },
+    ]
 }
 
 

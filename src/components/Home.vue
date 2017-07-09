@@ -3,7 +3,7 @@
     <h1 class="page-title">
       <div class="container">
         <span>Welcome to Web Design and Publishing</span>
-        <span class="page-title__sub">Spring 2017</span>
+        <span class="page-title__sub">Fall 2017</span>
       </div>
     </h1>
     <div class="container content">
