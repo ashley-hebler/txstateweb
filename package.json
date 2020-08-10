@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^2.6.11",
-    "vue-scrollto": "^2.7.2"
+    "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -45,7 +45,7 @@
     "vue-loader": "^10.0.0",
     "vue-markdown-loader": "^1.0.0",
     "vue-router": "^3.4.2",
-    "vue-scrollto": "^2.7.2",
+    "vue-scrollto": "^2.18.2",
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.44.1",
